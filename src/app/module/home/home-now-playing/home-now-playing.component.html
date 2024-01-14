@@ -1,0 +1,14 @@
+<div class="lcontainer-movies">
+  <div *ngFor="let movie of listPopularMovies" class="list-movies">
+    <a routerLink="serie" class="movie-link">
+      <img
+        src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
+        alt=""
+        class="cover-movie"
+      />
+      <div class="card-hover">
+        <span class="btn-watch">watch</span>
+      </div>
+    </a>
+  </div>
+</div>

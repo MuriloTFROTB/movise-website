@@ -1,0 +1,48 @@
+.lcontainer-movies {
+    display: flex;
+    gap: 8px;
+    padding: 4px 2px;
+    max-width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+  
+  .list-movies {
+    flex: 0 0 auto;
+    min-width: 200px;
+    
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover-movie {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  .movie-link{
+    height: 300px;
+    position: relative;
+    
+  }
+  .movie-link:hover .cover-movie {
+    transform: scale(1.2);
+    filter: blur(2px);
+    
+  }
+  .movie-link:hover .btn-watch{
+    display: block;
+  }
+  .btn-watch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid;
+    padding: 4px;
+    font-size: 22px;
+    transform: translate(-50% ,-50%);
+    display: none;
+    z-index: 10;
+    border-radius: 5px;
+  }

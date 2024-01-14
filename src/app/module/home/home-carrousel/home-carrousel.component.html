@@ -1,0 +1,15 @@
+<div class="container-carrousel">
+  <div class="card-carrousel">
+    <div class="slide" *ngFor="let background of listPopularMovies">
+      <div class="card-background">
+        <img
+          src="https://image.tmdb.org/t/p/original/{{ background.backdrop_path }}"
+          alt=""
+          class="background"
+        />
+      </div>
+
+      <div class="card-infortmation"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+
+.nav-topBar {
+    max-width: 1000px;
+    min-width: 500px;
+    margin: 0px auto;
+    border-bottom: 1px solid;
+  }
+  .btns-topBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .bx {
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .item-topbar {
+    display: flex;
+  }
+  .search-topbar {
+    position: relative;
+  }
+  .input-search {
+    border: 1px solid;
+    padding: 0px 8px;
+    border-radius: 5px;
+    width: 108px;
+    transition: width 0.2s ease-in;
+  }
+  .search-topbar .bx-search {
+    position: absolute;
+    right: 0px;
+    color: black;
+  }
+  .estilo-clique {
+    width: 200px;
+  }
+  

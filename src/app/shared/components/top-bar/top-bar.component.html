@@ -1,0 +1,21 @@
+<div class="container">
+    <nav class="nav-topBar">
+      <ul class="btns-topBar">
+        <li class="item-topbar">
+          <i class="bx bx-menu"> </i>
+        </li>
+        <li class="item-topbar">Banner</li>
+        <li class="search-topbar item-topbar">
+          <input
+            type="text"
+            placeholder="Digite aqui"
+            class="input-search"
+            [ngClass]="{ 'estilo-clique': clicado }"
+            (click)="clickInputSearch()"
+          />
+          <i class="bx bx-search"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
