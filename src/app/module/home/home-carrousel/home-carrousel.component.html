@@ -3,13 +3,16 @@
     <div class="slide" *ngFor="let background of listPopularMovies">
       <div class="card-background">
         <img
-          src="https://image.tmdb.org/t/p/original/{{ background.backdrop_path }}"
+          src="https://image.tmdb.org/t/p/original/{{
+            background.backdrop_path
+          }}"
           alt=""
           class="background"
         />
       </div>
-
-      <div class="card-infortmation"></div>
+      <div class="card-information">
+        <h1>Filmes e Series <br> Tudo aqui</h1>
+      </div>
     </div>
   </div>
 </div>

@@ -22,4 +22,10 @@ export class ServiceTmdbService {
   getTopRted(): Observable<any> {
     return this.Http.get<any>(`${this.baseUrl}/movie/top_rated${this.apiKey}`);
   }
+  getSearchMovie(moviename:string):Observable<any>{
+    return this.Http.get<any>(`${this.baseUrl}search/movie${this.apiKey}&query=${moviename}`)
+  }
+  getMovieById(movieId:number):Observable<any>{
+    return this.Http.get(`${this.baseUrl}movie/${movieId}${this.apiKey}`)
+  }
 }

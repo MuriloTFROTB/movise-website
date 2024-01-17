@@ -8,18 +8,17 @@ import { Movie } from '../../../core/interfaces/movie';
   styleUrl: './home-carrousel.component.css',
 })
 export class HomeCarrouselComponent {
-  constructor(private MovieService: ServiceTmdbService) {
-  }
-  
-  listPopularMovies: Movie[] = [];
+  constructor(private MovieService: ServiceTmdbService) {}
 
-  getTopRated() {
-    this.MovieService.getNowPlaying().subscribe((data) => {
-      this.listPopularMovies = data.results.slice(0, 3);
-      console.log(data);
+  listPopularMovies: Movie[] = [];
+  movieSerach = 1858;
+
+  carrouselMovie() {
+    this.MovieService.getMovieById(this.movieSerach).subscribe((data) => {
+      this.listPopularMovies = [data];
     });
   }
   ngOnInit(): void {
-    this.getTopRated();
+    this.carrouselMovie();
   }
 }
