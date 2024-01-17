@@ -18,4 +18,8 @@ export class HomeListMoviesComponent {
       this.listPopularMovies = data.results;
     });
   }
+  goToMovieDetails(movieId: number) {
+    // Faça o que quiser com o ID, como exibir no console
+    console.log("ID do filme:", movieId);
+  }
 }

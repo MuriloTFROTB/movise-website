@@ -1,6 +1,10 @@
-<div class="lcontainer-movies">
+<div class="container-Popular-movies">
+  <div class="header-Popular-movies">
+    <h1>Populares da semana</h1>
+  </div>
+  <div class="card-Popular-movies">
     <div *ngFor="let movie of listPopularMovies" class="list-movies">
-      <a routerLink="serie" class="movie-link">
+      <div (click)="goToMovieDetails(movie.id)" class="movie-link">
         <img
           src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
           alt=""
@@ -9,6 +13,7 @@
         <div class="card-hover">
           <span class="btn-watch">watch</span>
         </div>
-      </a>
+      </div>
     </div>
   </div>
+</div>

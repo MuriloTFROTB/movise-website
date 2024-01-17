@@ -1,15 +1,21 @@
-.lcontainer-movies {
+h1{
+  font-size: 24px;
+}
+.container-Popular-movies {
+  max-width: 1200px;
+  margin: 32px auto 32px auto;
+  padding: 8px;
+}
+.card-Popular-movies {
   display: flex;
   gap: 8px;
-  padding: 4px 2px;
-  max-width: 1000px;
-  margin: 0px auto;
+  padding: 8px 8px;
   overflow: auto;
 }
-.lcontainer-movies::-webkit-scrollbar {
+.card-Popular-movies::-webkit-scrollbar {
   height: 8px;
 }
-.lcontainer-movies::-webkit-scrollbar-thumb {
+.card-Popular-movies::-webkit-scrollbar-thumb {
   background-color: rgb(52, 49, 49);
   border-radius: 5px;
 }
@@ -49,4 +55,5 @@
   display: none;
   z-index: 10;
   border-radius: 5px;
+  cursor: pointer;
 }
