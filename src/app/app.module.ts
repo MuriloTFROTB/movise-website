@@ -7,7 +7,6 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SerieComponent } from './module/serie/serie.component';
 import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,7 +20,6 @@ import { HomeNowPlayingComponent } from './module/home/home-now-playing/home-now
 @NgModule({
   declarations: [
     AppComponent,
-    SerieComponent,
     TopBarComponent,
     FooterComponent,
     HomePageComponent,
